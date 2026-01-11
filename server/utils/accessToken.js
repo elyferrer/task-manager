@@ -3,12 +3,12 @@ const jwt = require('jsonwebtoken');
 const RefreshToken = require('../models/refreshToken');
 
 function generateAccessToken(res, user) {
-    const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '30s' });
+    const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '5m' });
 
     res.cookie('accessToken', accessToken, {
         httpOnly: true,
         secure: true,
-        maxAge: 3600000,
+        maxAge: 5 * 60 * 1000,
         sameSite: 'None'
     });
 

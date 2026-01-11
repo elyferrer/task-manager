@@ -116,14 +116,14 @@ const Task = () => {
                         <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                             Title
                         </span>
-                        <input type="text" className="w-full rounded p-2 border border-gray-400" name="title" value={formData.title} placeholder="Enter Title" onChange={handleChange} />
+                        <input type="text" className="w-full rounded p-2 border border-gray-400" name="title" value={formData.title} placeholder="Enter Title" onChange={handleChange} required />
                     </div>
 
                     <div className='m-2'>
                         <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                             Details
                         </span>
-                        <textarea name="details" className="w-full rounded p-2 resize-none border border-gray-400" value={formData.details} placeholder="Enter Details" onChange={handleChange}></textarea>
+                        <textarea name="details" className="w-full rounded p-2 resize-none border border-gray-400" value={formData.details} placeholder="Enter Details" onChange={handleChange} required></textarea>
                     </div>
 
                     <div className='m-2 grid grid-cols-2 gap-2'>
@@ -131,14 +131,14 @@ const Task = () => {
                             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                                 Start Date
                             </span>
-                            <input type="date" name="start_date" className='rounded p-2 w-full border border-gray-400' value={formData.start_date} onChange={handleChange} />
+                            <input type="date" name="start_date" className='rounded p-2 w-full border border-gray-400' value={formData.start_date} onChange={handleChange} required />
                         </div>
 
                         <div>
                             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                                 Start Time
                             </span><br />
-                            <input type="time" name="start_time" className='rounded p-2 w-full border border-gray-400' id="start_time" value={formData.start_time} onChange={handleChange} />
+                            <input type="time" name="start_time" className='rounded p-2 w-full border border-gray-400' id="start_time" value={formData.start_time} onChange={handleChange} required />
                         </div>
                     </div>
                     
@@ -147,13 +147,13 @@ const Task = () => {
                             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                                 End Date
                             </span>
-                            <input type="date" name="end_date" className='rounded p-2 w-full border border-gray-400' value={formData.end_date} onChange={handleChange} />
+                            <input type="date" name="end_date" className='rounded p-2 w-full border border-gray-400' value={formData.end_date} onChange={handleChange} required />
                         </div>
                         <div>
                             <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                                 End Time
                             </span><br />
-                            <input type="time" name="end_time" className='rounded p-2 w-full border border-gray-400' id="end_time" value={formData.end_time} onChange={handleChange} />
+                            <input type="time" name="end_time" className='rounded p-2 w-full border border-gray-400' id="end_time" value={formData.end_time} onChange={handleChange} required />
                         </div>
                     </div>
 
