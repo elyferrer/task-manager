@@ -42,9 +42,9 @@
 - Initially, I thought of storing the access token in the local storage, but that would make it unsecured. So I decided to store it in cookies but setting it to http only hiding it completely from the client side. These cookies are destroyed after logging out making the current refresh token invalid.
 
 ### Screenshots
+![Alt text](./images/login.PNG)
 ![Alt text](./images/homepage-after-add-mobile.PNG)
 ![Alt text](./images/homepage-after-update-mobile.PNG)
-![Alt text](./images/login.PNG)
 ![Alt text](./images/update-task-mobile.PNG)
 ![Alt text](./images/update-user-mobile.PNG)
 ![Alt text](./images/warning.PNG)
